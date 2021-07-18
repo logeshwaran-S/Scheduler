@@ -64,6 +64,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ikP-Gp-dde" id="Bgk-wN-RSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Event Controller-->
         <scene sceneID="s8v-5E-Crz">
             <objects>
-                <viewController id="U0o-0U-9Og" sceneMemberID="viewController">
+                <viewController id="U0o-0U-9Og" customClass="CreateEventController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KuV-yo-8dp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,6 +108,9 @@
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Orp-bp-tBv">
                                 <rect key="frame" x="47" y="313" width="320" height="216"/>
+                                <connections>
+                                    <action selector="didTapDatePicker:" destination="U0o-0U-9Og" eventType="valueChanged" id="1Q0-Wx-5q3"/>
+                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnC-9R-bYd">
                                 <rect key="frame" x="30" y="549" width="354" height="52"/>
@@ -114,6 +120,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Create Event"/>
+                                <connections>
+                                    <segue destination="UEX-ZL-6yl" kind="unwind" unwindAction="addNewEventWithSender:" id="d1h-GQ-Go9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zWp-wJ-L2a"/>
@@ -129,8 +138,13 @@
                             <constraint firstItem="Orp-bp-tBv" firstAttribute="centerX" secondItem="KuV-yo-8dp" secondAttribute="centerX" id="rPT-oy-JnP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Orp-bp-tBv" id="WTf-re-uhb"/>
+                        <outlet property="eventNameText" destination="Kod-BC-tzZ" id="vOb-1j-nhU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1B-ro-v5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="UEX-ZL-6yl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1841" y="-114"/>
         </scene>
