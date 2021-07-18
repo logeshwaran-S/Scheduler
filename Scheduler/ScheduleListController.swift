@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ScheduleListController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

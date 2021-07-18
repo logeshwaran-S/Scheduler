@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		56F52DD126A4683500E7A722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F52DD026A4683500E7A722 /* AppDelegate.swift */; };
 		56F52DD326A4683500E7A722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F52DD226A4683500E7A722 /* SceneDelegate.swift */; };
-		56F52DD526A4683500E7A722 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F52DD426A4683500E7A722 /* ViewController.swift */; };
+		56F52DD526A4683500E7A722 /* ScheduleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F52DD426A4683500E7A722 /* ScheduleListController.swift */; };
 		56F52DD826A4683500E7A722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F52DD626A4683500E7A722 /* Main.storyboard */; };
 		56F52DDA26A4683700E7A722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F52DD926A4683700E7A722 /* Assets.xcassets */; };
 		56F52DDD26A4683700E7A722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F52DDB26A4683700E7A722 /* LaunchScreen.storyboard */; };
+		56F52DE626A46AF000E7A722 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F52DE526A46AF000E7A722 /* Event.swift */; };
+		56F52DEA26A46B4E00E7A722 /* CreateEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F52DE926A46B4E00E7A722 /* CreateEventController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56F52DCD26A4683500E7A722 /* Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F52DD026A4683500E7A722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56F52DD226A4683500E7A722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56F52DD426A4683500E7A722 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56F52DD426A4683500E7A722 /* ScheduleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListController.swift; sourceTree = "<group>"; };
 		56F52DD726A4683500E7A722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56F52DD926A4683700E7A722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F52DDC26A4683700E7A722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56F52DDE26A4683700E7A722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F52DE526A46AF000E7A722 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		56F52DE926A46B4E00E7A722 /* CreateEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				56F52DD026A4683500E7A722 /* AppDelegate.swift */,
 				56F52DD226A4683500E7A722 /* SceneDelegate.swift */,
-				56F52DD426A4683500E7A722 /* ViewController.swift */,
+				56F52DD426A4683500E7A722 /* ScheduleListController.swift */,
+				56F52DE926A46B4E00E7A722 /* CreateEventController.swift */,
 				56F52DD626A4683500E7A722 /* Main.storyboard */,
 				56F52DD926A4683700E7A722 /* Assets.xcassets */,
 				56F52DDB26A4683700E7A722 /* LaunchScreen.storyboard */,
 				56F52DDE26A4683700E7A722 /* Info.plist */,
+				56F52DE526A46AF000E7A722 /* Event.swift */,
 			);
 			path = Scheduler;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F52DD526A4683500E7A722 /* ViewController.swift in Sources */,
+				56F52DEA26A46B4E00E7A722 /* CreateEventController.swift in Sources */,
+				56F52DE626A46AF000E7A722 /* Event.swift in Sources */,
+				56F52DD526A4683500E7A722 /* ScheduleListController.swift in Sources */,
 				56F52DD126A4683500E7A722 /* AppDelegate.swift in Sources */,
 				56F52DD326A4683500E7A722 /* SceneDelegate.swift in Sources */,
 			);
